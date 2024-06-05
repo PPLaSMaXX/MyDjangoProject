@@ -33,6 +33,9 @@
   <ItemGroup>
     <Compile Include="app_blog\admin.py" />
     <Compile Include="app_blog\apps.py" />
+    <Compile Include="app_blog\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app_blog\migrations\__init__.py" />
     <Compile Include="app_blog\models.py" />
     <Compile Include="app_blog\tests.py" />
@@ -48,7 +51,9 @@
     <Compile Include="MyDjangoProject\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app_blog\templates\app_blog\index.html" />
+    <Content Include="app_blog\templates\articles_list.html" />
+    <Content Include="app_blog\templates\fotorama.html" />
+    <Content Include="app_blog\templates\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
