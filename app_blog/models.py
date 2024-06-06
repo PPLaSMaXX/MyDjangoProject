@@ -48,7 +48,7 @@ class Article(models.Model):
             url = reverse('news-detail', kwargs={'year': self.pub_date.strftime("%Y"), 'month': self.pub_date.strftime("%m"),'day': self.pub_date.strftime("%d"), 'slug': self.slug, })
         except:
             url = "/" 
-            return url
+        return url
 
 class ArticleImage(models.Model):
     article = models.ForeignKey(Article, verbose_name=u'Стаття',
